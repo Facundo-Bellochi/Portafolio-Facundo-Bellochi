@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Facundo Bellochi | Portfolio</title>
+
+  <meta name="description" content="Portfolio personal de Facundo Bellochi. Programador web que crea soluciones creativas con HTML, CSS, JavaScript y más.">
+  <meta name="keywords" content="portfolio, portafolio, desarrollador, programador, HTML, CSS, JavaScript, React, proyectos, web developer, Facundo Bellochi">
+  <meta name="author" content="Facundo Bellochi">
+
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+
+  <header>
+    <nav class="nav">
+      <div class="nav__contenedor">
+        <div class="nav__logo">Facundo Bellochi</div>
+
+        <button class="nav__toggle" id="navToggle" aria-label="Abrir menú">
+          ☰
+        </button>
+
+        <ul class="menu" id="menu">
+          <li><a href="#sobremi">Sobre mí</a></li>
+          <li><a href="#proyectos">Proyectos</a></li>
+          <li><a href="#contacto">Contacto</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="home-hero">
+      <div class="home-hero-content">
+        <h1 class="head-primary">Hey, I'm Facundo Bellochi</h1>
+        <div class="home-hero-info">
+          <p class="text-primary">
+            "Modificar Texto a Descripcion"
+          </p>
+        </div>
+        <div class="boton-hero-projects">
+          <a href="#proyectos" class="projects-button">Projects</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="sobremi" class="sobremi">
+      <div class="main-container">
+
+        <h2 class="sobremi-titulo">Sobre mí</h2>
+        <div class="sobremi-texto">
+          <p>
+            Soy estudiante de informática y programador web en formación. Me interesa la tecnología desde los 15 años, especialmente entender cómo funcionan las cosas que usamos día a día. A lo largo de mi aprendizaje he desarrollado distintos proyectos web y sigo explorando nuevas herramientas y lenguajes, con ganas de adentrarme también en el mundo de Python.
+          </p>
+          <p>
+            La curiosidad es lo que impulsa mi trabajo: me motiva descubrir, crear y mejorar cada día a través del código. Te invito a conocer algunos de mis proyectos a continuación.
+          </p>
+          <a href="#proyectos" class="btn">Ver mis proyectos ↓</a>
+        </div>
+      
+        <div class="sobremi-content">
+          <p>
+            También podés seguirme en 
+            <a href="" target="_blank">LinkedIn</a> y 
+            <a href="" target="_blank">GitHub</a>.
+          </p>
+          <a href="#contacto" class="contact-button">Contacto</a>
+        </div>
+
+        <div class="conocimientos">
+          <h3 class="conocimientos-titulo">Conocimientos</h3>
+
+          <div class="conocimientos-grid">
+            <div class="conocimientos_skill">HTML</div>
+            <div class="conocimientos_skill">CSS</div>
+            <div class="conocimientos_skill">JavaScript</div>
+            <div class="conocimientos_skill">Python</div>
+            <div class="conocimientos_skill">WordPress</div>
+            <div class="conocimientos_skill">Git</div>
+            <div class="conocimientos_skill">GitHub</div>
+            <div class="conocimientos_skill">Responsive Design</div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <section id="proyectos" class="proyectos">
+      <div class="main-container">
+        <div class="proyectos-grid">
+          <div class="proyecto-card">
+            <a href="#" target="_blank">
+              <img src="img/proyecto1.jpg" alt="Proyecto 1">
+            </a>
+            <div class="proyecto-info">
+              <h3>Portfolio Personal</h3>
+              <p>
+                Sitio web responsive desarrollado con HTML, CSS y JavaScript.
+              </p>
+              <a href="#" target="_blank" class="btn-proyecto">Ver proyecto</a>
+            </div>
+          </div>
+                    <div class="proyecto-card">
+            <a href="#" target="_blank">
+              <img src="img/proyecto1.jpg" alt="Proyecto 1">
+            </a>
+            <div class="proyecto-info">
+              <h3>Portfolio Personal</h3>
+              <p>
+                Sitio web responsive desarrollado con HTML, CSS y JavaScript.
+              </p>
+              <a href="#" target="_blank" class="btn-proyecto">Ver proyecto</a>
+            </div>
+          </div>
+                    <div class="proyecto-card">
+            <a href="#" target="_blank">
+              <img src="img/proyecto1.jpg" alt="Proyecto 1">
+            </a>
+            <div class="proyecto-info">
+              <h3>Portfolio Personal</h3>
+              <p>
+                Sitio web responsive desarrollado con HTML, CSS y JavaScript.
+              </p>
+              <a href="#" target="_blank" class="btn-proyecto">Ver proyecto</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contacto" class="contact">
+      <div class="main-container">
+
+        <h2>Contacto</h2>
+
+        <form class="formulario__contacto" method="post">
+          <div class="formulario__campo">
+            <label for="nombre">Nombre</label>
+            <input required type="text" id="nombre" name="nombre">
+          </div>
+
+          <div class="formulario__campo">
+            <label for="correo">Correo electrónico</label>
+            <input required type="email" id="correo" name="correo">
+          </div>
+
+          <div class="formulario__campo">
+            <label for="mensaje">Mensaje</label>
+            <textarea required id="mensaje" name="mensaje"></textarea>
+          </div>
+
+          <button type="submit" class="btn">Enviar</button>
+        </form>
+
+      </div>
+    </section>
+  </main>
+  <script src="./javascript.js"></script>
+
+</body>
+</html>
